@@ -1,3 +1,10 @@
-WHAMMY!!<br />
-
-<video autoplay src="movie.mp4" type="video/mp4"></video>
+<script>
+  document.addEventListener('click', musicPlay);
+  function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+  }
+</script>
+<audio autoplay id="player">
+    <source src="movie.mp4" type="video/mp4">
+</audio>
